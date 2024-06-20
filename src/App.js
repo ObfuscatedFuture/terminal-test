@@ -1,25 +1,23 @@
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ClassForm from './components/ClassForm';
+import StyledButton from './components/StyledButton';
+import DropDown from './components/DropDown';
+import { useState } from 'react';
 
-function App() {
+export default function App() {
+  const [count, setValue] = React.useState(2);
+
+  function handleChange(event) {
+    setValue(event.target.value);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <h1> Class Selector </h1>
+        <ClassForm count={count}/>
+        <DropDown handleChange={handleChange}/>
+        <StyledButton text="Generate"/>
+      </div>
   );
 }
-
-export default App;

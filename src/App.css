@@ -36,3 +36,72 @@
     transform: rotate(360deg);
   }
 }
+
+.forms {
+  float: center;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  outline: 1px solid #f5f5f5;
+}
+input[type=text]:focus {
+  border-right: 2px solid #d6d6d6;
+  border-bottom: 2px solid #d6d6d6;
+  background-color:rgb(228, 228, 228)
+}
+
+.styledButton {
+  float: center;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  padding: 8px 14px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #282c34;
+}
+.styledButton:hover {
+  background-color: #ffffff;
+  border: 2px solid #282c34;
+}
+.styledButton:active {
+  background-color: #f5f5f5;
+  border-bottom: 3px solid #282c34;
+  border-right: 3px solid #282c34;
+  border-top: 1px solid #282c34;
+  border-left: 1px solid #282c34;
+  
+}
+
+.dropDown {
+  float: center;
+  flex-direction: row;
+  font-size: calc(8px + 2vmin);
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  padding: 8px 14px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #282c34;
+}
+.dropDown:hover {
+  float: center;
+  flex-direction: row;
+  font-size: calc(8px + 2vmin);
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  padding: 8px 14px;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+  outline: 1px solid #282c34;
+  text-decoration: none;
+  
+}
+.dropDown:hover option {
+  background-color: #eeeeee;
+  outline: 1px solid #282c34;
+}
